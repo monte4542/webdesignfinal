@@ -1,0 +1,178 @@
+body {
+  background-image: url("/Users/ryanjmonte/Desktop/Web Design Project/HTML_CSS_part4_19SP/img/IMG_8154.jpg");
+  text-align: center;
+}
+
+header {
+  font-family: 'futura', sans-serif;
+  color:white;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+
+}
+blockquote{font-family: 'futura', sans-serif;
+color: white;
+background-color: black;
+padding:10px;
+text align: center;}
+
+.princeton {
+  color: orange;
+}
+
+.photoshop {
+  color: cyan;
+}
+
+#evolution {
+  visibility: hidden;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: black;
+  padding-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+}
+
+
+
+h1, h2 {
+  font-family: 'futura', sans-serif;
+  color: white;
+}
+
+p {
+  font-family: 'futura', sans-sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'futura', sans-serif;
+  font-size: 1.5em;
+  background-color: black;
+  padding: 0.25em;
+  transition: all 500ms ease-in;
+  /*transition: color 500ms ease-in, background-color 500ms ease-in;
+*/
+}
+a:hover {
+  /*text-decoration: underline;*/ /* example of un-transitionable property */
+  color: orange;
+  background-color: black;
+
+
+}
+
+table {
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+
+}
+
+/*thead {
+  border: 2px solid black;
+}*/
+
+td {
+  width: 25%;
+  text-align: center;
+  border: 1px lightgray solid;
+}
+
+.covers {
+  font-weight: bold;
+}
+
+.shading {
+  background-color: black;
+
+}
+
+.cta {
+  padding: 2em;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+/* RWD code */
+img {
+  max-width: 100%;
+
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+
+  p, h1, h2 {
+    font-size: 2em;
+  }
+
+}
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+ body {background-color: aqua;
+ }
+}
+
+@media all and (min-width: 993px) {
+/* background-color: magenta; */
+
+}
